@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Setting up a Graph for Refinery | The Generative Design Primer</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.9">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../02_getting-started/2-05_refinery-processes.html" />
+    
+    
+    <link rel="prev" href="../02_getting-started/2-03_getting-started-with-project-refinery.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.3"
+        data-chapter-title="Setting up a Graph for Refinery"
+        data-filepath="02_getting-started/2-04_refinery-setup.md"
+        data-basepath=".."
+        data-revision="Fri Feb 22 2019 17:23:56 GMT-0500 (EST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        About
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_introduction/1-00_introduction.html">
+            
+                
+                    <a href="../01_introduction/1-00_introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Introduction
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_introduction/1-01_what-is-computational-design.html">
+            
+                
+                    <a href="../01_introduction/1-01_what-is-computational-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        What is Computational Design?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_introduction/1-02_what-is-generative-design.html">
+            
+                
+                    <a href="../01_introduction/1-02_what-is-generative-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        What is Generative Design?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_introduction/1-03_why-should-i-use-generative-design.html">
+            
+                
+                    <a href="../01_introduction/1-03_why-should-i-use-generative-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Why Should I Use Generative Design?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_introduction/1-04_what-goes-into-a-generative-design-process.html">
+            
+                
+                    <a href="../01_introduction/1-04_what-goes-into-a-generative-design-process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        What goes into a Generative Design Process?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01_introduction/1-05_an-example-of-generative-design.html">
+            
+                
+                    <a href="../01_introduction/1-05_an-example-of-generative-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        An Example of Generative Design
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01_introduction/1-06_a-further-analogy.html">
+            
+                
+                    <a href="../01_introduction/1-06_a-further-analogy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        A Further Analogy
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="01_introduction/1-07_what-is-visual-programming.html">
+            
+                
+                    <a href="../01_introduction/1-07_what-is-visual-programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        What is Visual Programming?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="01_introduction/1-08_what-is-dynamo.html">
+            
+                
+                    <a href="../01_introduction/1-08_what-is-dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        What is Dynamo?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="01_introduction/1-09_what-is-refinery.html">
+            
+                
+                    <a href="../01_introduction/1-09_what-is-refinery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        What is Refinery?
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_getting-started/2-01_getting-started.html">
+            
+                
+                    <a href="../02_getting-started/2-01_getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Getting Started with Generative Techniques in your Design Process
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_getting-started/2-02_anatomy-of-a-good-generative-design-process.html">
+            
+                
+                    <a href="../02_getting-started/2-02_anatomy-of-a-good-generative-design-process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Anatomy of a Good Generative Design Process
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_getting-started/2-03_getting-started-with-project-refinery.html">
+            
+                
+                    <a href="../02_getting-started/2-03_getting-started-with-project-refinery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Getting Started with Project Refinery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="02_getting-started/2-04_refinery-setup.html">
+            
+                
+                    <a href="../02_getting-started/2-04_refinery-setup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Setting up a Graph for Refinery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_getting-started/2-05_refinery-processes.html">
+            
+                
+                    <a href="../02_getting-started/2-05_refinery-processes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Running Refinery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_getting-started/2-06_viewing-refinery-results.html">
+            
+                
+                    <a href="../02_getting-started/2-06_viewing-refinery-results.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Visualising Results in Refinery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_getting-started/2-07_applying-generative-design-to-practical-challenges.html">
+            
+                
+                    <a href="../02_getting-started/2-07_applying-generative-design-to-practical-challenges.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Applying Generative Design to Practical Challenges
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_optioneering/3-00_optioneering.html">
+            
+            <span><b>3.</b> Optioneering</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="optioneering/what-is-optioneering.html">
+            
+            <span><b>3.1.</b> What is Optioneering?</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="optimisation/index.html">
+            
+            <span><b>4.</b> Optimisation</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="optimisation/what-is-optimisation.html">
+            
+            <span><b>4.1.</b> What is Optimisation?</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_algorithms/5-01_what-are-algoritms.html">
+            
+            <span><b>5.</b> Algorithms</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_algorithms/5-02_generators.html">
+            
+                
+                    <a href="../05_algorithms/5-02_generators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Generators
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_algorithms/5-03_evaluators.html">
+            
+                
+                    <a href="../05_algorithms/5-03_evaluators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Evaluators
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_algorithms/5-04_solvers.html">
+            
+                
+                    <a href="../05_algorithms/5-04_solvers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Solvers
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="10_appendix/10-01_appendix.html">
+            
+                
+                    <a href="../10_appendix/10-01_appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Appendix
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="10_appendix/10-02_glossary.html">
+            
+                
+                    <a href="../10_appendix/10-02_glossary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Glossary
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="10_appendix/10-03_references.html">
+            
+                
+                    <a href="../10_appendix/10-03_references.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        References
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="10_appendix/10-04_additional-material.html">
+            
+                
+                    <a href="../10_appendix/10-04_additional-material.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Additional Material
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="10_appendix/10-05_community-examples.html">
+            
+                
+                    <a href="../10_appendix/10-05_community-examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Community Examples
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >The Generative Design Primer</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="setting-up-a-graph-for-refinery">Setting up a Graph for Refinery</h1>
+<h3 id="inputs">Inputs</h3>
+<p>To set up a Dynamo graph for Refinery right-click on each node used to drive the graph and ensure that the <em>Is Input</em> option is ticked. Renaming the node with a standard approach such as IN_description will help to distinguish these inputs in Refinery.  </p>
+<p>(Note: currently all inputs must be number slider nodes)</p>
+<p><br></p>
+<p><img src="images/02-04_GettingStartedWRefinery_Pics/SettingUpGraph_IsInput.png"></p>
+<p><br></p>
+<h3 id="outputs">Outputs</h3>
+<p>To define outputs in Refinery, right-click on the watch nodes and select the &#x201C;Is Output&#x201D; option. Renaming the node with a standard approach such as OUT_description will help to distinguish these outputs in Refinery. </p>
+<p>(Note: currently all outputs must be watch nodes with a data type of Number).</p>
+<p><br></p>
+<p><img src="images/02-04_GettingStartedWRefinery_Pics/SettingUpGraph_RenameOutput.png"></p>
+<p><br></p>
+<p>Once both inputs and outputs are correctly set up, Refinery can be launched. In Dynamo navigate to the toolbar and select View &gt; Refinery&#x2026; This will start the local Refinery server and a new window will open.</p>
+<p><br></p>
+<p><img src="images/02-04_GettingStartedWRefinery_Pics/SettingUpGraph_Refinery.png"></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../02_getting-started/2-03_getting-started-with-project-refinery.html" class="navigation navigation-prev " aria-label="Previous page: Getting Started with Project Refinery"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../02_getting-started/2-05_refinery-processes.html" class="navigation navigation-next " aria-label="Next page: Running Refinery"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
